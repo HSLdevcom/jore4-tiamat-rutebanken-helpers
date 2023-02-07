@@ -1,0 +1,27 @@
+name: Publish package to GitHub Packages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  publish:
+    name: Publish package to GitHub Packages
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Extract metadata to env variables
+        uses: HSLdevcom/jore4-tools/github-actions/extract-metadata@extract-metadata-v1
+
+      - name: Publish to Github Packages
+        # if: ${{ github.ref == 'refs/heads/main' }}
+        run: |
+          # temporarily removing unit tests from the process as a dependent package (pubsub-emulator) is unavailable
+          mvn --batch-mode -DskipTests -Dentur.google.pubsub.emulator.download.skip=true deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
