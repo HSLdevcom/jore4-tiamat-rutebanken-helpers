@@ -71,12 +71,12 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/HSLdevcom/jore4-tiamat-rutebanken-helpers</url>
+            <url>https://maven.pkg.github.com/hsldevcom/jore4-tiamat-rutebanken-helpers</url>
         </repository>
         <snapshotRepository>
             <id>snapshot</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/HSLdevcom/jore4-tiamat-rutebanken-helpers</url>
+            <url>https://maven.pkg.github.com/hsldevcom/jore4-tiamat-rutebanken-helpers</url>
         </snapshotRepository>
     </distributionManagement>
 
