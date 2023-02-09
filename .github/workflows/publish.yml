@@ -22,6 +22,6 @@ jobs:
         # if: ${{ github.ref == 'refs/heads/main' }}
         run: |
           # temporarily removing unit tests from the process as a dependent package (pubsub-emulator) is unavailable
-          mvn --batch-mode -DskipTests -Dentur.google.pubsub.emulator.download.skip=true deploy
+          mvn --batch-mode -DskipTests -Dentur.google.pubsub.emulator.download.skip=true deploy -s settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
