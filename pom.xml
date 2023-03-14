@@ -26,7 +26,7 @@
     </parent>
 
     <groupId>org.entur.ror.helpers</groupId>
-    <artifactId>helper</artifactId>
+    <artifactId>jore4-tiamat-rutebanken-helpers</artifactId>
     <version>1.89-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -69,14 +69,14 @@
 
     <distributionManagement>
         <repository>
-            <id>central</id>
-            <name>entur2-releases</name>
-            <url>https://entur2.jfrog.io/entur2/libs-release-local</url>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/hsldevcom/jore4-tiamat-rutebanken-helpers</url>
         </repository>
         <snapshotRepository>
-            <id>snapshots</id>
-            <name>entur2-snapshots</name>
-            <url>https://entur2.jfrog.io/entur2/libs-snapshot-local</url>
+            <id>snapshot</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/hsldevcom/jore4-tiamat-rutebanken-helpers</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -189,7 +189,7 @@
                     </gitFlowConfig>
                 </configuration>
             </plugin>
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
                 <version>${nexus-staging-maven-plugin.version}</version>
@@ -197,10 +197,9 @@
                 <configuration>
                     <serverId>ossrh</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <!-- Set this to true and the release will automatically proceed and sync to Central Repository will follow  -->
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>
                 </configuration>
-            </plugin>
+            </plugin> -->
         </plugins>
     </build>
 

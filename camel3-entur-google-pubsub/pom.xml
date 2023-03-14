@@ -24,7 +24,7 @@ Inspired by: https://github.com/fabric8io/ipaas-quickstarts/
 
     <parent>
         <groupId>org.entur.ror.helpers</groupId>
-        <artifactId>helper</artifactId>
+        <artifactId>jore4-tiamat-rutebanken-helpers</artifactId>
         <version>1.89-SNAPSHOT</version>
     </parent>
 
