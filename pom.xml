@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.entur.ror</groupId>
         <artifactId>superpom</artifactId>
-        <version>1.53</version>
+        <version>1.57</version>
     </parent>
 
     <groupId>org.entur.ror.helpers</groupId>
@@ -86,17 +86,17 @@
 
         <java.version>11</java.version>
 
-        <spring-cloud-gcp.version>3.4.3</spring-cloud-gcp.version>
-        <camel.version>2.25.4</camel.version>
-        <camel3.version>3.14.4</camel3.version>
-        <kubernetes-client.version>5.12.4</kubernetes-client.version>
+        <spring-cloud-gcp.version>4.1.4</spring-cloud-gcp.version>
+        <camel.version>3.20.3</camel.version>
+        <camel3.version>3.20.3</camel3.version>
+        <kubernetes-client.version>6.5.1</kubernetes-client.version>
         <commons-io.version>2.11.0</commons-io.version>
         <hazelcast-kubernetes.version>2.2.3</hazelcast-kubernetes.version>
 
         <hamcrest.version>2.2</hamcrest.version>
 
-        <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
-        <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+        <nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version>
+        <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
 
 
         <!-- empty argLine property, the value is set up by Jacoco during unit tests execution -->
